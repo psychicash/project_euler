@@ -1,0 +1,25 @@
+#https://projecteuler.net/problem=2
+#1 + 2 = 3
+#2 + 3 = 5
+#3 + 5 = 8
+#8 + 5 = 13
+
+
+#x + y = z
+#line 18 is erroring on the z element as not defined, think it's the online sole I'm using, will run at home
+
+
+
+
+array = [1, 2]
+
+while array[0] <= 4000000 
+    
+    array[0] + array[1] == z.to_i
+    array.unshift(z.to_i)
+
+end
+
+put "#{array}"
+
+
