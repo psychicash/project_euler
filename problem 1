@@ -1,0 +1,24 @@
+# language is ruby
+
+i_math = 1000
+
+a_math = (1...1000)
+
+a_solution = []
+
+m_sum = 0
+
+a_math.each do |x|
+    
+    if (x % 3 == 0 || x % 5 == 0) == true
+        puts "#{x}"
+        a_solution << x
+        m_sum = a_solution.shift + m_sum
+    else
+        puts "not"
+    
+    end
+end
+
+
+puts "#{m_sum}"
