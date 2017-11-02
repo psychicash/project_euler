@@ -1,25 +1,37 @@
 #https://projecteuler.net/problem=2
-#1 + 2 = 3
-#2 + 3 = 5
-#3 + 5 = 8
-#8 + 5 = 13
+#final solution
+#defines two arrays to start
+
+fib_arr = [1, 0]     #the begining of the sequence
+fib_even = []        #repository for the even terms
 
 
-#x + y = z
-#line 18 is erroring on the z element as not defined, think it's the online sole I'm using, will run at home
+#code for the Fibonacci sequence itself
+#the 4 million here could be switched to
+#number to discover those terms
 
-
-
-
-array = [1, 2]
-
-while array[0] <= 4000000 
-    
-    array[0] + array[1] == z.to_i
-    array.unshift(z.to_i)
-
+while fib_arr[0] < 4000000
+       move = fib_arr[0] + fib_arr[1]
+       fib_arr.unshift move
 end
 
-put "#{array}"
+#this selects the even terms in the Fibonacci array and
+#pushes them to the even repository so the math below
+#has a reference to add from
+fib_arr.each do |x|
+    if x % 2 == 0
+        fib_even << x
+    else
+    end
+end
 
-
+#everything below here is just text and displaying the values of the arrays until the last line that finally
+#seperates all the even numbers and adds them.
+puts "The Fibonacci sequence for all terms less than 4,000,000 is this:"  
+puts "#{fib_arr}"
+puts " "
+puts "The even terms are:"
+puts "#{fib_even}"
+puts " "
+puts "The sum of all even terms in this sequence is"
+puts fib_even.inject(0, :+)
