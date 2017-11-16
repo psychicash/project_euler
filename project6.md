@@ -1,3 +1,4 @@
+```Ruby
 =begin
 Really proud of this. Completed without having to look up more than the syntax.  I was super close but I knew what needed to be done.
 Instead of creating a storage array and iterating numbers into, I'm learning how to use the languages built in storage and iteration
@@ -48,4 +49,4 @@ p "Elapsed Time: #{(Time.now - timer_start)*1000} milliseconds"
      #15.6 ms and I got the right answer. 
      
      
-     
+```
